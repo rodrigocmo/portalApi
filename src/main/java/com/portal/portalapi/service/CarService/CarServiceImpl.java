@@ -14,16 +14,16 @@ public class CarServiceImpl implements CarService{
 
     @Override
     public List<Car> getCarForSales() {
-        return null;
+        return carClient.carForSalesClient();
     }
 
     @Override
     public void changeCarForSale(Car car, Long id) {
-
+        carClient.changeCarForSalesClient(car,id);
     }
 
     @Override
     public void removeCarForSale(Long id) {
-
+        carClient.deleteCarForSalesClient(id);
     }
 }
