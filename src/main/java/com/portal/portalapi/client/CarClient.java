@@ -43,6 +43,9 @@ public class CarClient {
         rest.delete(SALES_CLIENT_URI+"/car"+id);
     }
 
+    /* Reminder ---- try to use webclient
+
+     */
 
 
 }
