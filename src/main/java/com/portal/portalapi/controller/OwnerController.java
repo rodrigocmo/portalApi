@@ -1,9 +1,7 @@
 package com.portal.portalapi.controller;
 
 import com.portal.portalapi.db.Owner;
-import com.portal.portalapi.service.OwnerService.OwnerService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.portal.portalapi.service.owner.OwnerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

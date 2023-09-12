@@ -1,4 +1,4 @@
-package com.portal.portalapi.service.OwnerService;
+package com.portal.portalapi.service.owner;
 
 import com.portal.portalapi.db.Owner;
 import org.springframework.stereotype.Service;

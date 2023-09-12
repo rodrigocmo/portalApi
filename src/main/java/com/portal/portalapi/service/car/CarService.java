@@ -1,4 +1,4 @@
-package com.portal.portalapi.service.CarService;
+package com.portal.portalapi.service.car;
 
 import com.portal.portalapi.db.Car;
 import org.springframework.stereotype.Service;

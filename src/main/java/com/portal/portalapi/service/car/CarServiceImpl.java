@@ -1,11 +1,12 @@
-package com.portal.portalapi.service.CarService;
+package com.portal.portalapi.service.car;
 
 import com.portal.portalapi.client.CarClient;
 import com.portal.portalapi.db.Car;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class CarServiceImpl implements CarService{
 
     @Autowired

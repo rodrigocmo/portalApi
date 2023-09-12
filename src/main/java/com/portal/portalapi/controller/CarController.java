@@ -2,7 +2,7 @@ package com.portal.portalapi.controller;
 
 import com.portal.portalapi.db.Car;
 import com.portal.portalapi.message.KafkaProducerMessage;
-import com.portal.portalapi.service.CarService.CarService;
+import com.portal.portalapi.service.car.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +21,7 @@ public class CarController {
     @Autowired
     private KafkaProducerMessage kafkaMessage;
 
-    @GetMapping("/kafkapost")
+    @PostMapping("/kafkapost")
     public ResponseEntity postCarForSale(@RequestBody Car car){
         kafkaMessage.sendMessage(car);
         return new ResponseEntity<>(HttpStatus.OK);
